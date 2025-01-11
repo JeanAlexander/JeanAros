@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <title>Currículum y Portafolio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Currículum Vitae -->
+        <section id="curriculum" data-aos="fade-up">
+            <header>
+                <h1>Tu Nombre</h1>
+                <p>Tu Profesión</p>
+            </header>
+            <section class="about">
+                <h2>Acerca de mí</h2>
+                <p>Breve descripción sobre ti, tus habilidades y objetivos profesionales.</p>
+            </section>
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Habilidad 1</li>
+                    <li>Habilidad 2</li>
+                    <li>Habilidad 3</li>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2>Experiencia</h2>
+                <div class="job">
+                    <h3>Puesto - Empresa</h3>
+                    <p>Año - Descripción de tus responsabilidades y logros.</p>
+                </div>
+                <!-- Agrega más trabajos aquí -->
+            </section>
+        </section>
+
+        <!-- Portafolio -->
+        <section id="portfolio" data-aos="fade-up">
+            <h2>Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto. Por ejemplo, una aplicación web, diseño o trabajo específico.</p>
+                    <a href="https://ejemplo.com/proyecto1" target="_blank" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto. Por ejemplo, una tienda online o un sistema interactivo.</p>
+                    <a href="https://ejemplo.com/proyecto2" target="_blank" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto. Por ejemplo, un diseño futurista o una app móvil.</p>
+                    <a href="https://ejemplo.com/proyecto3" target="_blank" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" data-aos="fade-up">
+            <h2>Contacto</h2>
+            <button id="contact-btn">Mostrar Información</button>
+            <div id="contact-info" style="display: none;">
+                <p>Email: tuemail@example.com</p>
+                <p>Teléfono: +123456789</p>
+            </div>
+        </footer>
+    </div>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1200, // Duración de las animaciones
+            once: true,     // Animar solo una vez al hacer scroll
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
